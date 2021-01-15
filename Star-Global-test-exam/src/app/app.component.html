@@ -1,0 +1,18 @@
+<div>transition speed( second):
+  <input
+    type="number"
+    [(ngModel)]="transitionSpeed"
+    (ngModelChange)="changeSpeed()"
+  >
+</div>
+
+<div
+  class="click-area"
+  #area
+  (click)="move($event)"
+>
+  <div
+    class="box"
+    #box
+  ></div>
+</div>
